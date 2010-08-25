@@ -1,0 +1,12 @@
+0.0.2 (09-24-2010)
+------------------
+
+Fix FIRMWARE to work with picUSBtoGLCD Demo v0.02 release
+
+0.0.1 (09-22-2010)
+------------------
+
+Initial FIRMWARE release.
+
+LIMITATIONS:
+	currently a text only dirver

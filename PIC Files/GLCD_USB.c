@@ -14,7 +14,7 @@
 #define USB_CONFIG_HID_RX_SIZE   8 
 
 #define USB_CONFIG_VID  0x0461
-#define USB_CONFIG_PID  0x0020
+#define USB_CONFIG_PID  0x474C
 
 #include "pic18_usb.h"
 #include "usb_desc_hid.h"
