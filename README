@@ -38,9 +38,10 @@ LCDInfo_Driver/
 
 		picUSBtoGLCD_driver.dll is a driver DLL for the following program
 
-			LCDInfo is a software for displaying various system information on PC connected monochrome GLCD displays.
-				INFO: http://www.lcdinfo.com/lcdinfo.html
-			DOWNLOAD: http://www.skippari.net/lcd/alpha/lcdinfo_test.zip
+			LCDInfo is a software for displaying various system information on PC connected monochrome 
+			GLCD displays.
+                INFO: http://www.lcdinfo.com/lcdinfo.html
+            DOWNLOAD: http://www.skippari.net/lcd/alpha/lcdinfo_test.zip
 
 			
 	picUSBtoGLCD_driver.cpp:
