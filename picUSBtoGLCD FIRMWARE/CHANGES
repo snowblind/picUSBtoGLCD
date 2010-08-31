@@ -1,0 +1,25 @@
+0.0.300 (09-29-2010)
+--------------------
+ADD:
+
+	Splash screen now reports FW version. I made a gfx based logo see logo.jpg for screenshot of it
+	( comments on my drawing skills are not welcome :) ) 
+	
+	New GLCD cmd 0x07 = clearGfxBuffer
+
+NEW FILE:
+
+	logo.h: contains writeBitmap( ) funtion and the data for the logo
+
+0.0.200 (09-24-2010)
+--------------------
+
+Fix FIRMWARE to work with picUSBtoGLCD Demo v0.02 release
+
+0.0.100 (09-22-2010)
+--------------------
+
+Initial FIRMWARE release.
+
+LIMITATIONS:
+	currently a text only dirver
