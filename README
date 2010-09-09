@@ -1,63 +1,67 @@
 picUSBtoGLCD:
-	
+    
 Do to limits in the current picUSBtoGLCD FIRMWARE the GLCD display is text only.
 
-	
+    
 
 picUSBtoGLCD proto board:
-	
-	* Coming soon schematic (with neg voltage driver)
-	
-	18F4550_USB_PB.jpg:
-		Picture of the picUSBtoGLCD proto board
+    
+    picUSBtoGLCD_schematic.pdf:
+        Schematic for the picUSBtoGLCD. 
+    
+    picUSBtoGLCD_PB.jpg:
+        Picture of the picUSBtoGLCD proto board
 
-	libusb-win32_InstallGuide.pdf:
-		A step by step guide for installing the libusb-win32 USB drivers for the picUSBtoGLCD proto board		
-		
-	Info:
-		GLCD:
-			Hyundai # HG25504 a SED1330F based 256x128 monochrome GLCD
-				http://www.allelectronics.com/make-a-store/item/LCD-101/256-X-128-LCD-PANEL/-/1.html
-		MCU:
-			Microchip PIC18F4550 a microcontroller with USB support	
-				http://www.microchip.com/wwwproducts/Devices.aspx?dDocName=en010300
+    libusb-win32_InstallGuide.pdf:
+        A step by step guide for installing the libusb-win32 USB drivers for the picUSBtoGLCD proto board       
 
-				
-				
+    Hyundai # HG25504-01.pdf:
+        Data sheet for the GLCD
+    
+    Info:
+        GLCD:
+            Hyundai # HG25504 a SED1330F based 256x128 monochrome GLCD
+                http://www.allelectronics.com/make-a-store/item/LCD-101/256-X-128-LCD-PANEL/-/1.html
+        MCU:
+            Microchip PIC18F4550 a microcontroller with USB support 
+                http://www.microchip.com/wwwproducts/Devices.aspx?dDocName=en010300
+
+                
+                
 picUSBtoGLCD FIRMWARE/
 
-	FW_20Mhz-xtal_18F4550.hex:
-	
-		hex file ready for programing to an PIC184550
+    FW_20Mhz-xtal_18F4550.hex:
+    
+        hex file ready for programing to a PIC184550
 
 
-		
+        
 LCDInfo_Driver/
 
-	picUSBtoGLCD_driver.dll:
+    picUSBtoGLCD_driver.dll:
 
-		picUSBtoGLCD_driver.dll is a driver DLL for the following program
+        picUSBtoGLCD_driver.dll is a driver DLL for the following program
 
             LCDInfo is a software for displaying various system information on PC connected monochrome 
             GLCD displays.
-                INFO: http://www.lcdinfo.com/lcdinfo.html
+                            INFO: http://www.lcdinfo.com/lcdinfo.html
             DOWNLOAD: http://www.skippari.net/lcd/alpha/lcdinfo_test.zip
 
-			
-	picUSBtoGLCD_driver.cpp:
-		
-		Source code for the picUSBtoGLCD_driver.dll
-		
-		
+            
+    picUSBtoGLCD_driver.cpp:
+        
+        Source code for the picUSBtoGLCD_driver.dll
+        
+
 
 picUSBtoGLCD Demo/
-	
-	picUSBtoGLCD_demo.exe:
+    
+    picUSBtoGLCD_demo.exe:
 
-		Simple win32 console example that "hello all" to the GLCD on the picUSBtoGLCD. 
-		
-		
-	picUSBtoGLCD_demo.cpp:
+        Simple win32 console example that prints "hello all" on the GLCD on the picUSBtoGLCD. 
+        
+        
+    picUSBtoGLCD_demo.cpp:
 
-		Source code for picUSBtoGLCD_demo.exe. Can be used as a starting point for writing your own cmd line 
-		program to control the picUSBtoGLCD.
+        Source code for picUSBtoGLCD_demo.exe. Can be used as a starting point for writing your own cmd line 
+        program to control the picUSBtoGLCD.
