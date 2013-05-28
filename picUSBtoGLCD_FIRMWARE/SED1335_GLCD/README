@@ -1,6 +1,5 @@
 picUSBtoGLCD SED1335 based GLCD proto board:
 
-You can no longer get this GLCD from allelectronics
 This driver will work with other SED1335 GLCDs
     
     picUSBtoGLCD_schematic.pdf:
@@ -10,7 +9,7 @@ This driver will work with other SED1335 GLCDs
         Picture of the picUSBtoGLCD proto board
 
     FW_20Mhz-xtal_18F4550.hex:
-        hex file ready for programing to a PIC184550
+        hex file ready for programing to a PIC18F4550
 
     Hyundai # HG25504-01.pdf:
         Data sheet for the GLCD
