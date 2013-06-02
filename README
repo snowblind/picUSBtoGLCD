@@ -2,10 +2,19 @@ picUSBtoGLCD:
     
 
     libusb-win32_InstallGuide.pdf:
-        A step by step guide for installing the libusb-win32 USB drivers for the picUSBtoGLCD proto board
+        A step by step guide for installing the libusb-win32 USB drivers for 
+        the picUSBtoGLCD proto board
+
+
+    LuaLCD Demo.mp4:
+        Short video of LuaLCD (Win32 program) running a lua script that outputs 
+        CPU temp, usage, 
+        GPU temp, usage, clocks
+        Network Info
+        Various Windows system info
                 
                 
-picUSBtoGLCD FIRMWARE/
+PIC_Code/
 
     ILI932X_GLCD/
         Files for ILI932X based GLCDs
@@ -15,14 +24,17 @@ picUSBtoGLCD FIRMWARE/
         Files for SED1335 based GLCDs
         See README for more info
 
-picUSBtoGLCD Demo/
+
+Win32_Code/
     
-    picUSBtoGLCD_demo.exe:
+    picUSBtoGLCD Demo/
+    
+        picUSBtoGLCD_demo.exe:
+            Simple win32 console example that prints "hello all" on the GLCD 
+            on the picUSBtoGLCD. 
+                
 
-        Simple win32 console example that prints "hello all" on the GLCD on the picUSBtoGLCD. 
-        
-        
-    picUSBtoGLCD_demo.cpp:
-
-        Source code for picUSBtoGLCD_demo.exe. Can be used as a starting point for writing your own cmd line 
-        program to control the picUSBtoGLCD.
+        picUSBtoGLCD_demo.cpp:
+            Source code for picUSBtoGLCD_demo.exe. Can be used as a starting 
+            point for writing your own cmd line program to control the 
+            picUSBtoGLCD.
