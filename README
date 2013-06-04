@@ -7,7 +7,8 @@ picUSBtoGLCD:
 
 
     LuaLCD Demo.mp4:
-        Short video of LuaLCD (Win32 program) running a lua interpreter that outputs 
+        Short video of LuaLCD_CLI (Win32 program) running a lua interpreter that 
+        outputs 
         CPU temp, usage, 
         GPU temp, usage, clocks
         Network Info
@@ -29,7 +30,8 @@ Win32_Code/
 
     LuaLCD_CLI/
         This program uses a Lua interpreter to control the picUSBtoGLCD to display 
-        some useful system info. Any info that you can get at with Lua can be displayed.
+        some useful system info. Any info that you can get at with Lua can be 
+        displayed.
         See README for more info
     
     picUSBtoGLCD Demo/
