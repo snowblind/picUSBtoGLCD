@@ -1,0 +1,21 @@
+ILI932X.c
+    Driver for ILI932X based controller GLCDs
+    
+glcd_gfx.c
+    Gfx lib 
+    
+logo_320x240x1.h
+    Data for B/W logo shown when the device starts
+    
+Adafruit_TFTLCD_README.txt
+    Required file for copyright 
+    See https://github.com/adafruit/TFTLCD-Library
+    ILI932X.c is based on the above code
+
+Adafruit_GFX_README.txt
+    Required file for copyright 
+    See https://github.com/adafruit/Adafruit-GFX-Library
+    glcd_gfx.c is based on the above code
+    
+process_USBtoGLCD.c
+    This code processes the USB packets    

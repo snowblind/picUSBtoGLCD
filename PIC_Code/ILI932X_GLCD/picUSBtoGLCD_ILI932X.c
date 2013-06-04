@@ -35,7 +35,7 @@
    #define debug_printf(a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z)
 #endif
 
-int8 datardy;
+int8 datardy; //FIXME Item: 190
 
 
 #nolist
@@ -43,7 +43,7 @@ int8 datardy;
 #define TFTTEXT
 #include <ILI932X\ILI932X.c>
 #include <ILI932X\glcd_gfx.c>
-#include <ILI932X\4W_TouchScreen.c>
+//#include <ILI932X\4W_TouchScreen.c>
 #include <ILI932X\process_USBtoGLCD.c>
 #list
 
@@ -56,7 +56,7 @@ void main( void )
    
    datardy = 0x00;
  
-   printf("\033[2J\033[H");                        // Clear VT100 Screen....
+   printf("\033[2J\033[H");   // Clear VT100 Screen.... I use PuTTY for my serial port mon program
    delay_ms( 50 );
    printf("picUSBtoGLCD V%x.%x PIC: %s\r\n", USB_CONFIG_VERSION >>8 & 0xff, USB_CONFIG_VERSION  & 0xff, getenv("DEVICE"));
 
@@ -74,7 +74,7 @@ void main( void )
   picUSBtoGLCDinfo.drivertype = 0x5F;
   
   
-   glcd_init(); //glcd_init(ON);
+   glcd_init(); 
    setRotation( 3 );
    
    glcd_ShowSplashScreen();
@@ -105,7 +105,6 @@ void main( void )
                if( usb_kbhit( 1 ) )
                { 
                   led_on( RX_LED );
-                  //memset( in, 0x00, sizeof( in ) );
                   usb_get_packet( 1, in, USB_EP1_RX_SIZE );
                   process_USBtoGLCD_inpackets( in );
                   led_off( RX_LED );
