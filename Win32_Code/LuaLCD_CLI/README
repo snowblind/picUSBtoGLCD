@@ -1,0 +1,38 @@
+This program uses a Lua interpreter to control the picUSBtoGLCD to display 
+some useful system info. Any info that you can get at with Lua can be displayed.
+
+You may need to get the VC2010 runtimes from microsoft to use this software.
+
+WARNING: The amdcpu.dll uses WinRing0.dll for low level access to the cpu. This low level 
+        access may make your system to crash please. It hasnt here and I have used the 
+        lib for 2 years. I dont think this will happen to you if try this software. 
+        But I think you should be informed. 
+        If the above makes you nervous,
+            1) BACKUP your system drive before trying 
+            2) remove the amdcpu.dll and WinRing files and fix the systeminfo.lua
+            3) Dont use this software
+            
+            
+LuaLCD_CLI.exe
+    Win32 CLI app that starts a Lua interpreter and runs the systeminfo.lua file
+    
+systeminfo.lua
+    The Lua Script that outputs various system info , Nvidia GPU TEMP/CLOCKS/USEAGE info, 
+    Network SENT/RECV SPEEDS and AMD CPU TEMP/USEAGE
+    
+LuaLCD.cfg:
+    Config file for LuaLCD_CLI.exe runs this before starting systeminfo.lua
+    Mainly used for the GUI version of LauLCD
+    
+perfcounter.dll:
+    C code module for Lau that that allows access to some of the windows perfdata
+
+nvidiagpu.dll:
+    C code module that allows access to the some of the NvAPI 
+    
+amdcpu.dll:
+    C code module that allows low level access to the CPU temp
+
+
+WinRing0x64.sys or WinRing0.sys, WinRing0.dll:
+    Used by amdcpu.dll to get at the CPU temp register
